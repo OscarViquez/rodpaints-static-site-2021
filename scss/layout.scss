@@ -1,22 +1,31 @@
-@import 'base.scss';
-
-
+@import "base.scss";
+// G L O B A L - L A Y O U T
 * {
-    padding: 0;
-    margin: 0;
-  }
-// .SideBar {
-    
-// }
+  padding: 0;
+  margin: 0;
+}
 
-// .Landing {
-    
-// }
+// S I D E B A R - L A Y O U T
+nav {
+    position: fixed; /* Safari */
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100%;
 
-// .About {
+}
 
-// }
+// L A N D I N G - L A Y O U T
+.Landing {
+    margin: 10rem 20rem;
+}
 
-// .Info {
+// A B O U T - L A Y O U T
+.About {
+    margin: 10rem 20rem;
+}
 
-// }
+// I N F O - L A Y O U T
+.Info {
+    margin: 10rem 20rem;
+}

@@ -10,4 +10,25 @@
   padding: 0;
   margin: 0;
 }
+
+nav {
+  position: fixed;
+  /* Safari */
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100%;
+}
+
+.Landing {
+  margin: 10rem 20rem;
+}
+
+.About {
+  margin: 10rem 20rem;
+}
+
+.Info {
+  margin: 10rem 20rem;
+}
 /*# sourceMappingURL=layout.css.map */
