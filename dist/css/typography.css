@@ -1,0 +1,47 @@
+/* Google Font API ______________________________ */
+@import url("https://fonts.googleapis.com/css2?family=Fauna+One&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/* Typography ______________________________ */
+/* ____________________________ Laptop / iPad Pro Screen Size */
+/* ____________________________ Mid-size tablet Screen Size */
+/* ____________________________  iPad / Tablet Screen size */
+/* ____________________________ Larger Phones Screen size */
+/* ____________________________ Smaller Phones Screen size */
+html {
+  scroll-behavior: smooth;
+  background: #f8f8f8;
+  text-decoration: none;
+  list-style: none;
+}
+
+* {
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  font-size: 55px;
+  font-weight: 550;
+}
+
+.Sidebar {
+  background-color: #fa5f6c;
+}
+
+.Sidebar-wrapper {
+  color: whitesmoke;
+}
+
+.Sidebar-item {
+  color: inherit;
+}
+
+.Landing-Subtitle {
+  font-size: 25px;
+  font-weight: 550;
+  color: #fa5f6c;
+}
+/*# sourceMappingURL=typography.css.map */

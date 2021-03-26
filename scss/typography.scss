@@ -1,0 +1,43 @@
+@import "base.scss";
+
+// G L O B A L - T Y P O G R A P H Y
+html {
+  scroll-behavior: smooth;
+  background: $whiteBG;
+  text-decoration: none;
+  list-style: none;
+}
+
+* {
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  font-family: $Poppins;
+}
+
+h1 {
+  font-size: size(large);
+  font-weight: weight(medium);
+  
+  // z-index: -1;
+}
+
+
+// S I D E B A R - T Y P O G R A P H Y
+.Sidebar {
+  background-color: $primary-color;
+}
+.Sidebar-wrapper {
+  color: $white;
+}
+.Sidebar-item {
+  color: inherit;
+}
+// L A N D I N G - T Y P O G R A P H Y
+.Landing-Subtitle {
+  font-size: size(medium);
+  font-weight: weight(medium);
+  color: $primary-color;
+}
