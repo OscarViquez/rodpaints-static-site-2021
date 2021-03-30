@@ -22,28 +22,97 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-h1 {
-  font-size: 55px;
+.Landing-Title {
+  font-size: 65px;
   font-weight: 550;
-}
-
-.Sidebar {
-  background-color: #fa5f6c;
-}
-
-.Sidebar-wrapper {
-  color: whitesmoke;
-  font-size: 16px;
-  font-weight: 300;
-}
-
-.Sidebar-item {
-  color: inherit;
+  color: #1b1b1b;
 }
 
 .Landing-Subtitle {
   font-size: 25px;
   font-weight: 550;
+  letter-spacing: 1px;
   color: #fa5f6c;
+}
+
+.Landing-Item {
+  letter-spacing: 1px;
+  font-size: 20px;
+  font-weight: 550;
+}
+
+.Landing-Btn {
+  color: whitesmoke;
+  background: #fa5f6c;
+  border: none;
+  border-radius: 50px;
+  text-align: center;
+  text-decoration: none;
+  letter-spacing: 2px;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.Landing-Btn a {
+  color: inherit;
+}
+
+@media (max-width: 375px) {
+  .Landing-Title {
+    font-size: 35px;
+    font-weight: 550;
+  }
+  .Landing-Subtitle {
+    font-size: 20px;
+    font-weight: 550;
+  }
+  .Landing-Item {
+    letter-spacing: 1px;
+    font-size: 14px;
+    font-weight: 550;
+  }
+  .Landing-Btn {
+    letter-spacing: 1px;
+    font-size: 16px;
+    font-weight: 300;
+  }
+}
+
+.About {
+  background: #2b2b2b;
+}
+
+.About-Text {
+  color: #f8f8f8;
+  font-size: 25px;
+  font-weight: 550;
+}
+
+.About-Text .About-Btn {
+  color: whitesmoke;
+  background: #fa5f6c;
+  border: none;
+  border-radius: 50px;
+  text-align: center;
+  text-decoration: none;
+  letter-spacing: 2px;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.About-Text .About-Btn a {
+  color: inherit;
+}
+
+@media (max-width: 375px) {
+  .About-Text {
+    color: #f8f8f8;
+    font-size: 20px;
+    font-weight: 300;
+  }
+  .About-Text .About-Btn {
+    font-size: 20px;
+    font-weight: 200;
+  }
 }
 /*# sourceMappingURL=typography.css.map */

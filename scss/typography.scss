@@ -17,29 +17,114 @@ body {
   font-family: $Poppins;
 }
 
-h1 {
-  font-size: size(large);
+// L A N D I N G - T Y P O G R A P H Y
+
+.Landing-Title {
+  font-size: size(super-large);
   font-weight: weight(medium);
-  
+  color: $black;
   // z-index: -1;
 }
 
-
-// S I D E B A R - T Y P O G R A P H Y
-.Sidebar {
-  background-color: $primary-color;
-}
-.Sidebar-wrapper {
-  color: $white;
-  font-size: size(xtra-small);
-  font-weight: weight(med-low);
-}
-.Sidebar-item {
-  color: inherit;
-}
-// L A N D I N G - T Y P O G R A P H Y
 .Landing-Subtitle {
   font-size: size(medium);
   font-weight: weight(medium);
+
+  letter-spacing: 1px;
   color: $primary-color;
+}
+
+.Landing-Item {
+  letter-spacing: 1px;
+  font-size: size(small);
+  font-weight: weight(medium);
+}
+
+.Landing-Btn {
+  color: $white;
+  background: $primary-color;
+
+  border: none;
+  border-radius: 50px;
+  text-align: center;
+  text-decoration: none;
+
+  letter-spacing: 2px;
+  font-size: size(small);
+  font-weight: weight(regular);
+
+  a {
+    color: inherit;
+  }
+}
+
+// ----------- M O B I L E
+@media (max-width: 375px) {
+  .Landing-Title {
+    font-size: size(regular);
+    font-weight: weight(medium);
+  }
+
+  .Landing-Subtitle {
+    font-size: size(small);
+    font-weight: weight(medium);
+  }
+
+  .Landing-Item {
+    letter-spacing: 1px;
+    font-size: size(xx-small);
+    font-weight: weight(medium);
+  }
+
+  .Landing-Btn {
+    letter-spacing: 1px;
+    font-size: size(xtra-small);
+    font-weight: weight(med-low);
+  }
+}
+
+// A B O U T - T Y P O G R A P H Y
+.About {
+  background: $blackBG;
+}
+.About-Text {
+  color: $whiteBG;
+
+  font-size: size(medium);
+  font-weight: weight(medium);
+
+  .About-Btn {
+    color: $white;
+    background: $primary-color;
+
+    border: none;
+    border-radius: 50px;
+    text-align: center;
+    text-decoration: none;
+
+    letter-spacing: 2px;
+    font-size: size(small);
+    font-weight: weight(regular);
+
+    a {
+      color: inherit;
+    }
+  }
+}
+
+// ----------- M O B I L E
+@media (max-width: 375px) {
+  .About-Text {
+    color: $whiteBG;
+
+    font-size: size(small);
+    font-weight: weight(med-low);
+
+    // text-align: center;
+
+    .About-Btn {
+      font-size: size(small);
+      font-weight: weight(low);
+    }
+  }
 }

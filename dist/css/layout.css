@@ -11,24 +11,117 @@
   margin: 0;
 }
 
-nav {
-  position: fixed;
-  /* Safari */
-  top: 0;
-  left: 0;
-  width: 250px;
-  height: 100%;
+.Landing {
+  padding: 15rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.Landing {
-  margin: 10rem 20rem;
+.Landing-List {
+  padding: 1rem 0 0 0;
+}
+
+.Landing-Item {
+  padding: 0.5rem 0;
+}
+
+.Landing-Btn {
+  margin: 0.5rem 0;
+  padding: 1rem 2rem;
+}
+
+.Landing-Img {
+  width: 50%;
+  height: auto;
+}
+
+@media (max-width: 375px) {
+  .Landing {
+    margin: 0;
+    padding: 10rem 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    text-align: center;
+  }
+  .Landing-List {
+    padding: 1rem 0;
+  }
+  .Landing-Item {
+    padding: 0.5rem 0;
+  }
+  .Landing-Btn {
+    margin: 0.5rem 0;
+    padding: 1rem 2rem;
+  }
+  .Landing-Img {
+    display: none;
+  }
 }
 
 .About {
-  margin: 10rem 20rem;
+  padding: 15rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.Info {
-  margin: 10rem 20rem;
+.About-Text {
+  padding: 2rem 5rem;
+  margin: 0 1rem;
+}
+
+.About-Img {
+  width: 40%;
+  height: auto;
+}
+
+.About-Btn {
+  margin: 0.5rem 0;
+  padding: 1rem 2rem;
+}
+
+@media (max-width: 375px) {
+  .About {
+    margin: 0;
+    padding: 5rem 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+  }
+  .About-Text {
+    padding: 0;
+    margin: 0;
+  }
+  .About-Img {
+    display: none;
+  }
+  .About-Btn {
+    margin: 1rem 0;
+    padding: 1rem 2rem;
+  }
 }
 /*# sourceMappingURL=layout.css.map */
