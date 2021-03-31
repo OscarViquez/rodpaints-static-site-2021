@@ -43,7 +43,7 @@
   height: auto;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 1500px) {
   .Landing {
     margin: 0;
     padding: 10rem 0;
@@ -67,7 +67,38 @@
     padding: 1rem 2rem;
   }
   .Landing-Img {
-    display: none;
+    width: 60%;
+    height: auto;
+  }
+}
+
+@media (max-width: 868px) {
+  .Landing {
+    margin: 0;
+    padding: 8rem 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    text-align: center;
+  }
+  .Landing-Img {
+    width: 70%;
+    height: auto;
+  }
+}
+
+@media (max-width: 680px) {
+  .Landing {
+    margin: 0;
+    padding: 3rem 0 10rem 0;
+  }
+  .Landing-Img {
+    width: 80%;
+    height: auto;
   }
 }
 
@@ -100,10 +131,10 @@
   padding: 1rem 2rem;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 1700px) {
   .About {
     margin: 0;
-    padding: 5rem 1rem;
+    padding: 10rem 3rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -114,14 +145,67 @@
   }
   .About-Text {
     padding: 0;
-    margin: 0;
+    margin: 5rem;
+  }
+  .About-Text h1 {
+    padding: 1rem 0 0 0;
+  }
+  .About-Text p {
+    padding: 1rem 0;
   }
   .About-Img {
-    display: none;
+    width: 50%;
+    height: auto;
   }
   .About-Btn {
     margin: 1rem 0;
     padding: 1rem 2rem;
+  }
+}
+
+@media (max-width: 868px) {
+  .About {
+    margin: 0;
+    padding: 10rem 3rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+  }
+  .About-Text {
+    padding: 0;
+    margin: 5rem 0;
+  }
+  .About-Text h1 {
+    padding: 1rem 0 0 0;
+  }
+  .About-Text p {
+    padding: 1rem 0;
+  }
+  .About-Img {
+    width: 50%;
+    height: auto;
+  }
+  .About-Btn {
+    margin: 1rem 0;
+    padding: 1rem 2rem;
+  }
+}
+
+@media (max-width: 680px) {
+  .About {
+    margin: 0;
+    padding: 8rem 3rem;
+  }
+  .About-Text {
+    padding: 0;
+    margin: 0;
+  }
+  .About-Img {
+    display: none;
   }
 }
 /*# sourceMappingURL=layout.css.map */

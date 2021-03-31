@@ -17,7 +17,7 @@ body {
   font-family: $Poppins;
 }
 
-// L A N D I N G - T Y P O G R A P H Y
+// L A N D I N G - T Y P O G R A P H Y ______________________________
 
 .Landing-Title {
   font-size: size(super-large);
@@ -58,8 +58,58 @@ body {
   }
 }
 
-// ----------- M O B I L E
-@media (max-width: 375px) {
+//______________________________ Landing iPad Pro / 12-15in Laptops
+@media (max-width: 1500px) {
+  .Landing-Title {
+    font-size: size(large);
+    font-weight: weight(medium);
+  }
+
+  .Landing-Subtitle {
+    font-size: size(regular);
+    font-weight: weight(medium);
+  }
+
+  .Landing-Item {
+    letter-spacing: 1px;
+    font-size: size(medium);
+    font-weight: weight(medium);
+  }
+
+  .Landing-Btn {
+    letter-spacing: 0px;
+    font-size: size(small);
+    font-weight: weight(med-low);
+  }
+}
+
+//______________________________ Landing iPad
+@media (max-width: 868px) {
+  .Landing-Title {
+    font-size: size(med-large);
+    font-weight: weight(medium);
+  }
+
+  .Landing-Subtitle {
+    font-size: size(medium);
+    font-weight: weight(medium);
+  }
+
+  .Landing-Item {
+    letter-spacing: 1px;
+    font-size: size(small);
+    font-weight: weight(medium);
+  }
+
+  .Landing-Btn {
+    letter-spacing: 1px;
+    font-size: size(small);
+    font-weight: weight(med-low);
+  }
+}
+
+//______________________________ Landing Mobile
+@media (max-width: 680px) {
   .Landing-Title {
     font-size: size(regular);
     font-weight: weight(medium);
@@ -72,7 +122,7 @@ body {
 
   .Landing-Item {
     letter-spacing: 1px;
-    font-size: size(xx-small);
+    font-size: size(xtra-small);
     font-weight: weight(medium);
   }
 
@@ -83,7 +133,7 @@ body {
   }
 }
 
-// A B O U T - T Y P O G R A P H Y
+// A B O U T - T Y P O G R A P H Y ______________________________
 .About {
   background: $blackBG;
 }
@@ -92,6 +142,10 @@ body {
 
   font-size: size(medium);
   font-weight: weight(medium);
+
+  p {
+    font-weight: weight(regular);
+  }
 
   .About-Btn {
     color: $white;
@@ -112,15 +166,41 @@ body {
   }
 }
 
-// ----------- M O B I L E
-@media (max-width: 375px) {
+//______________________________ About iPad Pro / 12-15in Laptops
+@media (max-width: 1500px) {
   .About-Text {
     color: $whiteBG;
 
-    font-size: size(small);
-    font-weight: weight(med-low);
+    font-size: size(medium);
+    font-weight: weight(regular);
 
     // text-align: center;
+
+    p {
+      font-size: size(medium);
+    }
+
+    .About-Btn {
+      font-size: size(medium);
+      font-weight: weight(med-low);
+    }
+  }
+}
+
+
+//______________________________ About iPad
+@media (max-width: 868px) {
+  .About-Text {
+    color: $whiteBG;
+
+    font-size: size(medium);
+    font-weight: weight(regular);
+
+    // text-align: center;
+
+    p {
+      font-size: size(medium);
+    }
 
     .About-Btn {
       font-size: size(small);
@@ -128,3 +208,25 @@ body {
     }
   }
 }
+
+
+// ______________________________ About Mobile
+@media (max-width: 680px) {
+  .About-Text {
+    font-size: size(small);
+    font-weight: weight(med-low);
+
+    // text-align: center;
+
+    p {
+      font-size: size(xtra-small);
+    }
+
+    .About-Btn {
+      font-size: size(small);
+      font-weight: weight(low);
+    }
+  }
+}
+
+

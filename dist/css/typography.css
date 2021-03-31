@@ -57,7 +57,49 @@ body {
   color: inherit;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 1500px) {
+  .Landing-Title {
+    font-size: 55px;
+    font-weight: 550;
+  }
+  .Landing-Subtitle {
+    font-size: 35px;
+    font-weight: 550;
+  }
+  .Landing-Item {
+    letter-spacing: 1px;
+    font-size: 25px;
+    font-weight: 550;
+  }
+  .Landing-Btn {
+    letter-spacing: 0px;
+    font-size: 20px;
+    font-weight: 300;
+  }
+}
+
+@media (max-width: 868px) {
+  .Landing-Title {
+    font-size: 45px;
+    font-weight: 550;
+  }
+  .Landing-Subtitle {
+    font-size: 25px;
+    font-weight: 550;
+  }
+  .Landing-Item {
+    letter-spacing: 1px;
+    font-size: 20px;
+    font-weight: 550;
+  }
+  .Landing-Btn {
+    letter-spacing: 1px;
+    font-size: 20px;
+    font-weight: 300;
+  }
+}
+
+@media (max-width: 680px) {
   .Landing-Title {
     font-size: 35px;
     font-weight: 550;
@@ -68,7 +110,7 @@ body {
   }
   .Landing-Item {
     letter-spacing: 1px;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 550;
   }
   .Landing-Btn {
@@ -88,6 +130,10 @@ body {
   font-weight: 550;
 }
 
+.About-Text p {
+  font-weight: 400;
+}
+
 .About-Text .About-Btn {
   color: whitesmoke;
   background: #fa5f6c;
@@ -104,11 +150,43 @@ body {
   color: inherit;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 1500px) {
   .About-Text {
     color: #f8f8f8;
+    font-size: 25px;
+    font-weight: 400;
+  }
+  .About-Text p {
+    font-size: 25px;
+  }
+  .About-Text .About-Btn {
+    font-size: 25px;
+    font-weight: 300;
+  }
+}
+
+@media (max-width: 868px) {
+  .About-Text {
+    color: #f8f8f8;
+    font-size: 25px;
+    font-weight: 400;
+  }
+  .About-Text p {
+    font-size: 25px;
+  }
+  .About-Text .About-Btn {
+    font-size: 20px;
+    font-weight: 200;
+  }
+}
+
+@media (max-width: 680px) {
+  .About-Text {
     font-size: 20px;
     font-weight: 300;
+  }
+  .About-Text p {
+    font-size: 16px;
   }
   .About-Text .About-Btn {
     font-size: 20px;

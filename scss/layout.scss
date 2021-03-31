@@ -6,7 +6,7 @@
   margin: 0;
 }
 
-// L A N D I N G - L A Y O U T
+// L A N D I N G - L A Y O U T ______________________________
 .Landing {
   padding: 15rem;
 
@@ -32,8 +32,10 @@
   width: 50%;
   height: auto;
 }
-// ----------- M O B I L E
-@media (max-width: 375px) {
+
+
+//______________________________ Landing iPad Pro / 12-15in Laptops
+@media (max-width: 1500px) {
   .Landing {
     margin: 0;
     padding: 10rem 0;
@@ -46,23 +48,56 @@
   .Landing-List {
     padding: 1rem 0;
   }
-  
+
   .Landing-Item {
     padding: 0.5rem 0;
   }
-  
+
   .Landing-Btn {
     margin: 0.5rem 0;
     padding: 1rem 2rem;
   }
-  
+
   .Landing-Img {
-    display: none;
+    width: 60%;
+    height: auto;
   }
 }
 
 
-// A B O U T - L A Y O U T
+//______________________________ Landing iPad
+@media (max-width: 868px) {
+  .Landing {
+    margin: 0;
+    padding: 8rem 0;
+
+    display: flex;
+    flex-flow: column nowrap;
+    text-align: center;
+  }
+
+  .Landing-Img {
+    width: 70%;
+    height: auto;
+  }
+}
+
+
+// ______________________________ Landing Mobile
+@media (max-width: 680px) {
+  .Landing {
+    margin: 0;
+    padding: 3rem 0 10rem 0;
+  }
+
+  .Landing-Img {
+    width: 80%;
+    height: auto;
+  }
+}
+
+
+// A B O U T - L A Y O U T ______________________________
 .About {
   padding: 15rem;
 
@@ -85,11 +120,11 @@
   padding: 1rem 2rem;
 }
 
-// ----------- M O B I L E
-@media (max-width: 375px) {
+//______________________________ About iPad Pro / 12-15in. Laptops
+@media (max-width: 1700px) {
   .About {
     margin: 0;
-    padding: 5rem 1rem;
+    padding: 10rem 3rem;
 
     display: flex;
     flex-flow: column nowrap;
@@ -97,15 +132,79 @@
 
   .About-Text {
     padding: 0;
-    margin: 0;
-  }
-  .About-Img {
-    display: none;
+    margin: 5rem;
+
+    
+    h1 {
+      padding: 1rem 0 0 0;
+    }
+
+    p {
+      padding: 1rem 0;
+    }
   }
   
+  .About-Img {
+    width: 50%;
+    height: auto;
+  }
+
   .About-Btn {
     margin: 1rem 0;
     padding: 1rem 2rem;
+  }
+}
+
+//______________________________ About iPad
+@media (max-width: 868px) {
+  .About {
+    margin: 0;
+    padding: 10rem 3rem;
+
+    display: flex;
+    flex-flow: column nowrap;
+  }
+
+  .About-Text {
+    padding: 0;
+    margin: 5rem 0;
+
+    
+    h1 {
+      padding: 1rem 0 0 0;
+    }
+
+    p {
+      padding: 1rem 0;
+    }
+  }
+  
+  .About-Img {
+    width: 50%;
+    height: auto;
+  }
+
+  .About-Btn {
+    margin: 1rem 0;
+    padding: 1rem 2rem;
+  }
+}
+
+
+// ______________________________ About Mobile
+@media (max-width: 680px) {
+  .About {
+    margin: 0;
+    padding: 8rem 3rem;
+  }
+
+  .About-Text {
+    padding: 0;
+    margin: 0;
+
+  }
+  .About-Img {
+    display: none;
   }
 }
 
