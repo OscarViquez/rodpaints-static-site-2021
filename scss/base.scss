@@ -15,14 +15,14 @@ $font-weights: (
 //font-size
 $font-size: (
   "xx-small": 14px,
-  "xtra-small": 16px,
+  "x-small": 16px,
   "small": 20px,
   "medium": 25px,
   "regular": 35px,
   "med-large": 45px,
   "large": 55px,
-  "super-large": 65px,
-  "mega-large": 75px,
+  "x-large": 65px,
+  "xx-large": 75px,
 );
 
 //fonts
@@ -53,7 +53,6 @@ $red: #e98585;
 $yellow: #e9da85;
 $green: #8ae985;
 $blue: #85b5e9;
-
 
 // Color for icons
 $insta: #bc2a8d;

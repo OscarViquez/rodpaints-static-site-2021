@@ -1,0 +1,224 @@
+/* Google Font API ______________________________ */
+@import url("https://fonts.googleapis.com/css2?family=Fauna+One&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/* Typography ______________________________ */
+/* ____________________________ Laptop / iPad Pro Screen Size */
+/* ____________________________ Mid-size tablet Screen Size */
+/* ____________________________  iPad / Tablet Screen size */
+/* ____________________________ Larger Phones Screen size */
+/* ____________________________ Smaller Phones Screen size */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.navbar.scrolled {
+  background-color: #f8f8f8;
+  -webkit-transition: background-color 200ms linear;
+  transition: background-color 200ms linear;
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+}
+
+/* custom scroll bar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #fa5f6c;
+  border-radius: 20px;
+}
+
+::-moz-selection {
+  background: #85b5e9;
+}
+
+::selection {
+  background: #85b5e9;
+}
+
+.content {
+  max-width: 1250px;
+  margin: auto;
+  padding: 0 30px;
+}
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+  padding: 25px 0;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.navbar.sticky {
+  background: #1b1b1b;
+  padding: 10px 0;
+  -webkit-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.navbar .logo a {
+  color: #fa5f6c;
+  font-size: 30px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.navbar .logo a:hover {
+  color: #fa5f6c;
+}
+
+.navbar .menu-list {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.menu-list li {
+  list-style: none;
+}
+
+.menu-list li a {
+  color: #fa5f6c;
+  font-size: 20px;
+  font-weight: 500;
+  margin-left: 25px;
+  text-decoration: none;
+  -webkit-transition: all 0.1s ease;
+  transition: all 0.1s ease;
+}
+
+.menu-list li a:hover {
+  color: #fa5f6c;
+}
+
+.icon {
+  color: #fa5f6c;
+  font-size: 25px;
+  cursor: pointer;
+  display: none;
+}
+
+.menu-list .cancel-btn {
+  position: absolute;
+  right: 30px;
+  top: 20px;
+}
+
+@media (max-width: 1230px) {
+  .menu-list li a {
+    color: #fa5f6c;
+  }
+  .icon {
+    color: #fa5f6c;
+  }
+  .content {
+    padding: 0 60px;
+  }
+  .content {
+    max-width: 1250px;
+    margin: auto;
+    padding: 0 30px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .menu-list li a {
+    color: #fa5f6c;
+  }
+  .icon {
+    color: #fa5f6c;
+  }
+  .content {
+    max-width: 1250px;
+    margin: auto;
+    padding: 0 30px;
+  }
+  .content {
+    padding: 0 40px;
+  }
+  .menu-list li a {
+    color: #fa5f6c;
+  }
+  .cancel-btn {
+    color: #2b2b2b;
+  }
+}
+
+@media (max-width: 900px) {
+  .content {
+    padding: 0 30px;
+  }
+  .menu-list li a {
+    color: #2b2b2b;
+  }
+}
+
+@media (max-width: 868px) {
+  body.disabled {
+    overflow: hidden;
+  }
+  .icon {
+    display: block;
+  }
+  .icon.hide {
+    display: none;
+  }
+  .navbar .menu-list {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    max-width: 400px;
+    left: -100%;
+    top: 0px;
+    display: block;
+    padding: 40px 0;
+    text-align: center;
+    background: #f8f8f8;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+  .navbar.show .menu-list {
+    left: 0%;
+  }
+  .navbar .menu-list li {
+    margin-top: 45px;
+  }
+  .navbar .menu-list li a {
+    font-size: 23px;
+    margin-left: -100%;
+    -webkit-transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  .navbar.show .menu-list li a {
+    margin-left: 0px;
+  }
+}
+
+@media (max-width: 380px) {
+  .navbar .logo a {
+    font-size: 27px;
+  }
+}
+/*# sourceMappingURL=nav.css.map */
