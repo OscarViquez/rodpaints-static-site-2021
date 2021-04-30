@@ -511,6 +511,7 @@ body {
 }
 
 .Card-Wrapper {
+  background: $whiteBGCard;
   box-shadow: $shadow2;
 
   border-radius: 20px;
@@ -655,84 +656,113 @@ body {
 .Gallery {
   background: $whiteBG;
 
-  padding: 15rem 5rem 15rem 24rem;
+  padding: 15rem 20rem 15rem 24rem;
+
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+
+  padding: 0;
+  margin: 0;
 }
 
-.Gallery-Header {
+
+.Gallery-card {
+  margin: 4rem 8rem 4rem 0;
+
+  position: relative;
+  height: 470px;
+  width: 340px;
+
+  display: block;
+
+  box-shadow: $shadow2;
+}
+
+// #first-card {
+//   margin-left: 10rem;
+// }
+
+.Gallery-card:hover {
+  box-shadow: 2px 5px 30px 3px rgba(30, 30, 60, 0.4);
+  transition: 0.8s;
+  
+}
+
+.Gallery-card .Gallery-card-image {
+  background: $blackBG;
+
+  height: 400px;
+  overflow: hidden;
+
+  transition: 0.1s linear;
+}
+
+.Gallery-card-image img {
+  height: 100%;
+  width: 100%;
+  transition: 0.3s;
+}
+
+.Gallery-card:hover .image img {
+  opacity: 0.6s;
+  transform: scale(1.1);
+}
+
+.Gallery-card .Gallery-card-content {
+  border: none;
+  border-radius: 15px;
+
+  position: absolute;
+  bottom: 0px;
+  background: $white;
+  width: 100%;
+  text-align: center;
+
+  padding: 20px 30px;
+}
+
+.Gallery-card-content .Gallery-card-title {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.Gallery-card-content .Gallery-card-sub-title {
+  font-size: 18px;
+  font-weight: 500;
   color: $primary-color;
-
-  font-size: size(med-large);
-  font-weight: weight(regular);
+  margin-bottom: 10px;
 }
 
-.Gallery-List {
-  padding: 5rem 0;
+.Gallery-card-bottom p {
   color: $blackBG;
-
-  font-size: size(med-large);
-  font-weight: weight(regular);
+  font-size: size(x-small);
+  line-height: 1.5em;
+  text-align: center;
 }
 
+.Gallery-card-bottom button {
+  border: none;
+  border-radius: 10px;
 
+  text-align: center;
+  padding: 7px 15px;
 
-@media (max-width: 1500px) {
+  font-size: 17px;
+  font-weight: 500;
 
-  .Gallery {
-    background: $whiteBG;
-  
-    padding: 15rem 3rem 15rem 3rem;
-  }
+  background: $primary-color;
+  color: $whiteBG;
 
-  .Gallery-Header {
-    color: $primary-color;
-  
-    font-size: size(medium);
-    font-weight: weight(regular);
-  }
+  margin: 1rem 0;
 
-  
-  .Gallery-List {
-    padding: 2rem 0;
-    font-size: size(regular);
-    font-weight: weight(regular);
-  }
+  cursor: pointer;
+  transition: 0.2s ease;
 }
 
-
-@media (max-width: 680px) {
-
-  .Gallery {
-    background: $whiteBG;
-  
-    padding: 15rem 3rem 15rem 3rem;
-  }
-
-  .Gallery-Header {
-    color: $primary-color;
-  
-    font-size: size(medium);
-    font-weight: weight(regular);
-  }
-
-  
-  .Gallery-List {
-    padding: 2rem 0;
-    font-size: size(regular);
-    font-weight: weight(regular);
-  }
+.Gallery-card-bottom button:hover {
+  transform: scale(0.99);
+  transition: 0.2s ease;
+  background: $blackBG;
+  color: $whiteBG;
 }
-
-// List
-// .Gallery-List {
-//   display: flex;
-//   flex-flow: row nowrap;
-// }
-
-// .Gallery--Card-Wrapper {
-//   box-shadow: $shadow2;
-
-//   border-radius: 20px;
-
-//   margin: 0 4rem 0 0;
-//   padding: 5rem 3rem 5rem 3rem;
-// }

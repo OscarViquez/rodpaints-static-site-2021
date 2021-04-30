@@ -15,7 +15,7 @@
 
 html {
   scroll-behavior: smooth;
-  background: #f8f8f8;
+  background: #f1eded;
   text-decoration: none;
   list-style: none;
 }
@@ -49,7 +49,7 @@ body {
 }
 
 .Landing-Subtitle {
-  color: #f8f8f8;
+  color: #f1eded;
   font-family: "Poppins", sans-serif;
   font-size: 55px;
 }
@@ -61,14 +61,14 @@ body {
 
 .Landing-Item {
   padding: 0.5rem 0;
-  color: #f8f8f8;
+  color: #f1eded;
 }
 
 .Landing-Btn {
   margin: 0.5rem 0;
   padding: 1rem 2rem;
   background-color: #fa5f6c;
-  color: #f8f8f8;
+  color: #f1eded;
   border-width: 0px;
   border-radius: 50px;
 }
@@ -222,7 +222,7 @@ body {
 }
 
 .About-Header {
-  background: #f8f8f8;
+  background: #f1eded;
   font-weight: 400;
   font-size: 45px;
   color: #fa5f6c;
@@ -241,11 +241,11 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: #f8f8f8;
+  background: #f1eded;
 }
 
 .About-Text {
-  background-color: #f8f8f8;
+  background-color: #f1eded;
   padding: 3rem 4rem;
   margin: 0 4rem 0 1rem;
   letter-spacing: 1px;
@@ -442,7 +442,7 @@ body {
 }
 
 .Services-Header {
-  background: #f8f8f8;
+  background: #f1eded;
   color: #fa5f6c;
   padding: 0rem 23rem 5rem 24rem;
 }
@@ -454,7 +454,7 @@ body {
 
 .Services {
   font-family: "Poppins", sans-serif;
-  background: #f8f8f8;
+  background: #f1eded;
   color: #2b2b2b;
   padding: 0rem 15rem 10rem 23rem;
   display: -webkit-box;
@@ -467,6 +467,7 @@ body {
 }
 
 .Card-Wrapper {
+  background: #f8f8f8;
   -webkit-box-shadow: 2px 5px 8px 3px rgba(30, 30, 60, 0.11);
           box-shadow: 2px 5px 8px 3px rgba(30, 30, 60, 0.11);
   border-radius: 20px;
@@ -494,7 +495,7 @@ body {
   }
   .Services {
     font-family: "Poppins", sans-serif;
-    background: #f8f8f8;
+    background: #f1eded;
     color: #2b2b2b;
     padding: 0rem 5rem 10rem 8rem;
     display: -webkit-box;
@@ -597,54 +598,110 @@ body {
 }
 
 .Gallery {
-  background: #f8f8f8;
-  padding: 15rem 5rem 15rem 24rem;
+  background: #f1eded;
+  padding: 15rem 20rem 15rem 24rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 0;
+  margin: 0;
 }
 
-.Gallery-Header {
+.Gallery-card {
+  margin: 4rem 8rem 4rem 0;
+  position: relative;
+  height: 470px;
+  width: 340px;
+  display: block;
+  -webkit-box-shadow: 2px 5px 8px 3px rgba(30, 30, 60, 0.11);
+          box-shadow: 2px 5px 8px 3px rgba(30, 30, 60, 0.11);
+}
+
+.Gallery-card:hover {
+  -webkit-box-shadow: 2px 5px 30px 3px rgba(30, 30, 60, 0.4);
+          box-shadow: 2px 5px 30px 3px rgba(30, 30, 60, 0.4);
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+
+.Gallery-card .Gallery-card-image {
+  background: #2b2b2b;
+  height: 400px;
+  overflow: hidden;
+  -webkit-transition: 0.1s linear;
+  transition: 0.1s linear;
+}
+
+.Gallery-card-image img {
+  height: 100%;
+  width: 100%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.Gallery-card:hover .image img {
+  opacity: 0.6s;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.Gallery-card .Gallery-card-content {
+  border: none;
+  border-radius: 15px;
+  position: absolute;
+  bottom: 0px;
+  background: whitesmoke;
+  width: 100%;
+  text-align: center;
+  padding: 20px 30px;
+}
+
+.Gallery-card-content .Gallery-card-title {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.Gallery-card-content .Gallery-card-sub-title {
+  font-size: 18px;
+  font-weight: 500;
   color: #fa5f6c;
-  font-size: 45px;
-  font-weight: 400;
+  margin-bottom: 10px;
 }
 
-.Gallery-List {
-  padding: 5rem 0;
+.Gallery-card-bottom p {
   color: #2b2b2b;
-  font-size: 45px;
-  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5em;
+  text-align: center;
 }
 
-@media (max-width: 1500px) {
-  .Gallery {
-    background: #f8f8f8;
-    padding: 15rem 3rem 15rem 3rem;
-  }
-  .Gallery-Header {
-    color: #fa5f6c;
-    font-size: 25px;
-    font-weight: 400;
-  }
-  .Gallery-List {
-    padding: 2rem 0;
-    font-size: 35px;
-    font-weight: 400;
-  }
+.Gallery-card-bottom button {
+  border: none;
+  border-radius: 10px;
+  text-align: center;
+  padding: 7px 15px;
+  font-size: 17px;
+  font-weight: 500;
+  background: #fa5f6c;
+  color: #f1eded;
+  margin: 1rem 0;
+  cursor: pointer;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
 }
 
-@media (max-width: 680px) {
-  .Gallery {
-    background: #f8f8f8;
-    padding: 15rem 3rem 15rem 3rem;
-  }
-  .Gallery-Header {
-    color: #fa5f6c;
-    font-size: 25px;
-    font-weight: 400;
-  }
-  .Gallery-List {
-    padding: 2rem 0;
-    font-size: 35px;
-    font-weight: 400;
-  }
+.Gallery-card-bottom button:hover {
+  -webkit-transform: scale(0.99);
+          transform: scale(0.99);
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+  background: #2b2b2b;
+  color: #f1eded;
 }
 /*# sourceMappingURL=layout.css.map */
