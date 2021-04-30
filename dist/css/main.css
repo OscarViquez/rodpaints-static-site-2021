@@ -544,14 +544,14 @@ body {
 
 @media (max-width: 1100px) {
   .Services-Header {
-    padding: 5rem 3rem 1rem 3rem;
+    padding: 5rem 3rem 1rem 5rem;
   }
   .Services-Header h1 {
     font-weight: 400;
     font-size: 35px;
   }
   .Services {
-    padding: 0rem 3rem 15rem 3rem;
+    padding: 0rem 3rem 15rem 5rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -618,15 +618,13 @@ body {
           flex-flow: row wrap;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  padding: 0;
-  margin: 0;
 }
 
 .Gallery-card {
-  margin: 4rem 8rem 4rem 0;
+  margin: 0 4rem 4rem 0;
   position: relative;
-  height: 470px;
-  width: 340px;
+  height: 410px;
+  width: 280px;
   display: block;
   -webkit-box-shadow: 2px 5px 8px 3px rgba(30, 30, 60, 0.11);
           box-shadow: 2px 5px 8px 3px rgba(30, 30, 60, 0.11);
@@ -641,7 +639,7 @@ body {
 
 .Gallery-card .Gallery-card-image {
   background: #2b2b2b;
-  height: 400px;
+  height: 300px;
   overflow: hidden;
   -webkit-transition: 0.1s linear;
   transition: 0.1s linear;
@@ -672,15 +670,8 @@ body {
 }
 
 .Gallery-card-content .Gallery-card-title {
-  font-size: 22px;
-  font-weight: 600;
-}
-
-.Gallery-card-content .Gallery-card-sub-title {
-  font-size: 18px;
-  font-weight: 500;
-  color: #fa5f6c;
-  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: 550;
 }
 
 .Gallery-card-bottom p {
@@ -691,27 +682,136 @@ body {
 }
 
 .Gallery-card-bottom button {
-  border: none;
-  border-radius: 10px;
-  text-align: center;
-  padding: 7px 15px;
-  font-size: 17px;
-  font-weight: 500;
-  background: #fa5f6c;
-  color: #f1eded;
-  margin: 1rem 0;
-  cursor: pointer;
-  -webkit-transition: 0.2s ease;
-  transition: 0.2s ease;
+  display: none;
 }
 
-.Gallery-card-bottom button:hover {
-  -webkit-transform: scale(0.99);
-          transform: scale(0.99);
-  -webkit-transition: 0.2s ease;
-  transition: 0.2s ease;
-  background: #2b2b2b;
-  color: #f1eded;
+@media (max-width: 1700px) {
+  .Gallery {
+    padding: 5rem 2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .Gallery-card {
+    margin: 2rem;
+    height: 410px;
+    width: 280px;
+  }
+  .Gallery-card .Gallery-card-content {
+    padding: 70px 20px 70px 20px;
+  }
+  .Gallery-card .Gallery-card-image {
+    height: 200px;
+  }
+  .Gallery-card-content .Gallery-card-title {
+    font-size: 20px;
+    font-weight: 550;
+  }
+  .Gallery-card-content .Gallery-card-sub-title {
+    font-size: 14px;
+    font-weight: 400;
+  }
+}
+
+@media (max-width: 980px) {
+  .Gallery {
+    padding: 5rem 2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .Gallery-card {
+    margin: 2rem;
+    height: 410px;
+    width: 280px;
+  }
+  .Gallery-card .Gallery-card-content {
+    padding: 70px 20px 70px 20px;
+  }
+  .Gallery-card .Gallery-card-image {
+    height: 200px;
+  }
+  .Gallery-card-content .Gallery-card-title {
+    font-size: 20px;
+    font-weight: 550;
+  }
+  .Gallery-card-content .Gallery-card-sub-title {
+    font-size: 14px;
+    font-weight: 400;
+  }
+}
+
+@media (max-width: 680px) {
+  .Gallery {
+    padding: 5rem 2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .Gallery-card {
+    margin: 2rem;
+    height: 410px;
+    width: 280px;
+  }
+  .Gallery-card .Gallery-card-content {
+    padding: 70px 20px 70px 20px;
+  }
+  .Gallery-card .Gallery-card-image {
+    height: 200px;
+  }
+  .Gallery-card-content .Gallery-card-title {
+    font-size: 20px;
+    font-weight: 550;
+  }
+  .Gallery-card-content .Gallery-card-sub-title {
+    font-size: 14px;
+    font-weight: 400;
+  }
+}
+
+@media (max-width: 380px) {
+  .Gallery {
+    padding: 5rem 1rem;
+  }
+  .Gallery-card {
+    margin: 2rem;
+    height: 410px;
+    width: 280px;
+  }
+  .Gallery-card .Gallery-card-content {
+    padding: 70px 20px 70px 20px;
+  }
+  .Gallery-card .Gallery-card-image {
+    height: 200px;
+  }
+  .Gallery-card-content .Gallery-card-title {
+    font-size: 20px;
+    font-weight: 550;
+  }
+  .Gallery-card-bottom p {
+    font-size: 16px;
+  }
 }
 
 /* Google Font API ______________________________ */

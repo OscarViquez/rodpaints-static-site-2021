@@ -15,7 +15,7 @@
 }
 
 .navbar.scrolled {
-  background-color: #f8f8f8;
+  background-color: #f1eded;
   -webkit-transition: background-color 200ms linear;
   transition: background-color 200ms linear;
   -webkit-backdrop-filter: blur(20px);
@@ -195,7 +195,7 @@
     display: block;
     padding: 40px 0;
     text-align: center;
-    background: #f8f8f8;
+    background: #f1eded;
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
   }
