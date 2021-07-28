@@ -202,6 +202,11 @@ body {
     text-align: center;
     z-index: 1;
 
+    h2 {
+      font-size: $fs-large;
+      font-weight: $fw-mid;
+      text-decoration: underline;
+    }
     h1 {
       font-size: $fs-xx-large;
       font-weight: $fw-semi-bold;
@@ -318,6 +323,10 @@ body {
 
     &__wrapper {
       padding: 60px 20px;
+
+      h1 {
+        font-size: $fs-large;
+      }
     }
 
     video {
@@ -328,128 +337,232 @@ body {
 /* ABOUT ME CSS ************************************************************** */
 
 .about {
-  padding: 50px 0;
-  width: 1300px;
+  display: flex;
 
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  &__header-container {
+    width: 50%;
+    padding: 250px 0;
 
-  text-align: left;
-  justify-content: left;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
+      url("/assets/images/about-img.jpg");
+    background-size: cover;
 
-  &__container {
-    display: flex;
-    img {
-      width: 35%;
-      height: auto;
+  }
+
+  &__text-container {
+    width: 50%;
+    padding: 150px 0px 150px 100px;
+    background-color: $white;
+    color: $black;
+    line-height: 1.8;
+
+    h1 {
+      color: $black;
+      font-weight: $fw-semi-bold;
+      font-size: $fs-x-large;
+      text-decoration: underline;
+
     }
 
-    .about__text-wrapper {
-      width: 65%;
-      padding: 5rem;
+    p {
+      letter-spacing: 2px;
+      font-size: $fs-xxx-small;
+      font-weight: $fw-mid;
+    }
+  }
+}
 
+@media (max-width: 700px) {
+  .about {
+  display: flex;
+  flex-flow: column nowrap;
+
+  &__header-container {
+    width: 100%;
+    padding: 200px 0;
+  }
+
+  &__text-container {
+    width: 100%;
+    padding: 100px 30px 150px 50px;
+  }
+}
+}
+
+
+
+/* SERVICES CSS ************************************************************** */
+.services {
+  display: flex;
+
+  &__header-container {
+    width: 50%;
+    padding: 200px 0;
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
+      url("/assets/images/services-img.jpg");
+    background-size: cover;
+
+    text-align: center;
+  }
+
+  &__list-container {
+    width: 50%;
+    padding: 100px 10px 150px 100px;
+    background-color: $white;
+    color: $black;
+    line-height: 1.8;
+
+    h1 {
+      color: $black;
+      font-weight: $fw-semi-bold;
+      font-size: $fs-x-large;
+      text-decoration: underline;
+
+    }
+
+    ul {
+      list-style: circle;
+
+      li {
+        letter-spacing: 2px;
+        font-size: $fs-xxx-small;
+        font-weight: $fw-mid;
+      }
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .services {
+    display: flex;
+    flex-flow: column-reverse nowrap;
+
+
+    &__header-container {
+      width: 100%;
+      padding: 200px 0;
+    }
+
+    &__list-container {
+      width: 100%;
+      padding: 100px 10px 150px 50px;
+    }
+  }
+}
+
+/* Quote CSS ************************************************************** */
+.quote {
+  padding: 100px;
+  line-height: 1.5;
+
+  .quote__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .quote__contact {
+    width: 50%;
+
+    h1 {
+      font-size: $fs-x-large;
+      font-weight: $fw-semi-bold;
+      padding-right: 10px;
+      text-decoration: underline;
+
+    }
+
+    p {
+      letter-spacing: 1px;
+      font-size: $fs-xxx-small;
+
+      padding-bottom: 10px;
+      padding-right: 20px;
+    }
+
+    a {
+      color: $black;
+      p {
+        letter-spacing: 1px;
+        font-weight: $fw-semi-bold;
+      }
+    }
+  }
+
+  .quote__image {
+    width: 50%;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+@media (max-width: 1110px) {
+  .quote {
+    padding: 100px 50px;
+
+    .quote__container {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: center;
+    }
+
+    .quote__contact {
+      width: 50%;
       h1 {
-        font-size: $fs-large;
-        font-weight: $fw-bold;
-
-        margin-bottom: 30px;
+        font-size: $fs-medium;
+        padding-right: 10px;
       }
 
       p {
-        font-size: $fs-xx-small;
-        line-height: 1.6;
-      }
-    }
-  }
-}
-
-@media (max-width: 1300px) {
-  .about {
-    padding: 50px;
-    width: 868px;
-
-    &__container {
-      display: flex;
-      img {
-        width: 45%;
-        height: auto;
+        letter-spacing: 1px;
+        padding-bottom: 10px;
+        padding-right: 20px;
       }
 
-      .about__text-wrapper {
-        width: 55%;
-        padding: 5rem;
-
-        h1 {
-          font-size: $fs-large;
-          font-weight: $fw-bold;
-
-          margin-bottom: 30px;
-        }
-
+      a {
+        color: $black;
         p {
-          font-size: $fs-xx-small;
+          letter-spacing: 1px;
+          font-weight: $fw-semi-bold;
         }
       }
     }
-  }
-}
 
-@media (max-width: 868px) {
-  .about {
-    padding: 50px;
-    width: 600px;
-
-    &__container {
+    .quote__image {
+      width: 50%;
       img {
-        width: 50%;
+        width: 100%;
         height: auto;
       }
-
-      .about__text-wrapper {
-        width: 50%;
-        padding: 0;
-        padding-left: 40px;
-      }
     }
   }
 }
 
-@media (max-width: 600px) {
-  .about {
-    width: 400px;
-
-    &__container {
+@media (max-width: 730px) {
+  .quote {
+    .quote__container {
+      display: flex;
       flex-flow: column nowrap;
+      justify-content: center;
     }
-
-    img {
+    .quote__contact {
       width: 100%;
-      height: auto;
     }
-
-    .about__text-wrapper {
+    .quote__image {
       width: 100%;
-      padding: 0;
-
-      h1 {
-        margin-top: 30px;
+      img {
+        width: 100%;
+        height: auto;
       }
     }
-  }
-}
-
-@media (max-width: 400px) {
-  .about {
-    width: 100%;
-    margin-left: 0px;
-    margin-right: 0px;
   }
 }
 
 /* FOOTER CSS ************************************************************** */
 footer {
-  padding: 40px 200px;
+  padding: 70px 200px;
   background-color: $white;
   color: $black;
 
@@ -478,6 +591,8 @@ footer {
       font-size: $fs-xx-small;
       font-weight: $fw-bold;
       margin-bottom: 1rem;
+      text-decoration: underline;
+
     }
     a {
       font-size: $fs-xxx-small;
@@ -496,6 +611,8 @@ footer {
       font-size: $fs-xx-small;
       font-weight: $fw-bold;
       margin-bottom: 1rem;
+      text-decoration: underline;
+
     }
     a {
       font-size: $fs-xxx-small;
