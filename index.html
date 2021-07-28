@@ -10,307 +10,122 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./dist/css/main.css">
-    <!--  SVG Icon -->
 
-    <head>
+    <!-- ================= Icon API ================= -->
+    <!-- <head>
         <link rel="shortcut icon" type="image/x-icon" href="./images/card_logo.png" />
-    </head>
-    <!-- Font Awesome -->
+    </head> -->
+    <!-- ================= Font Awesome API ================= -->
     <script src="https://kit.fontawesome.com/51a8c67162.js" crossorigin="anonymous"></script>
-    <!-- JQuery -->
+
+    <!-- ================= jQuery ================= -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous">
         </script>
-    <!-- Animate CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
+    <!-- ================= Bootstrap ================= -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- ================= SCSS ================= -->
+    <link rel="stylesheet" type="text/css" href="./dist/css/main.css">
+
+    <!--  ================ Boxicons ================= -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
+    <!--  ================ GSAP ================= -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/ScrollTrigger.min.js"></script>
     <title>Rod's Paint & Remodeling</title>
 </head>
 
 
 <body>
-    <!-- N A V B A R______________ -->
-    <nav class="navbar">
-        <div class="content">
-            <div class="logo animate__animated animate__fadeInDown">
-                <a class="menu-item" href="#">ROD</a>
+
+    <!-- ========================== Landing Section ==========================  -->
+    <section class="landing" id="landing__section">
+        <video autoplay muted loop id="video">
+            <source src="assets/video/Stapling wood.mp4" type="video/mp4">
+        </video>
+        <div class="landing__wrapper">
+            <h1>Need Remodeling or Painting?</h1>
+            <p>We are a local business located in Georgia, making sure people are satisfied with our work</p>
+            <div class="landing__buttons">
+                <a href="#">
+                    <p><i class="fas fa-mobile"></i> 404-422-5513</p>
+                </a>
+                <a href="#">
+                    <p><i class="fas fa-envelope"></i> rodpaintremodel@gmail.com </p>
+                </a>
+
             </div>
-            <ul class="menu-list">
-                <div class="icon cancel-btn">
-                    <i class="fas fa-times"></i>
-                </div>
-                <li class="">
-                    <a class="menu-item" href="#">Home</a>
-                </li>
-                <li class="">
-                    <a class="menu-item" href="#About-Header">About</a>
-                </li>
-                <li class=""><a class="menu-item" href="#Services-Header">Services</a></li>
-                <li class="">
-                    <a class="menu-item" href="#Gallery-Header">Gallery</a>
-                </li>
-            </ul>
-            <div class="icon menu-btn animate__animated animate__fadeInDown">
-                <i class="fas fa-bars"></i>
-            </div>
-        </div>
-    </nav>
-    <!-- L a n d i n g ______________ -->
-    ​<section class="Landing">
-        <div class="Landing-Container">
-            <h1 class="Landing-Title">
-                <span class="Landing-TitleText-1">Rod's Paint</span>
-                <span class="Landing-TitleText-2">& Remodeling</span>
-            </h1>
-            <h3 class="Landing-Subtitle animate__animated animate__fadeInDown"> Residential & Commercial Presswasher -
-                SheetRocks </h3>
-            <ul class="Landing-List">
-                <li class="Landing-Item animate__animated animate__fadeInDown animate__faster">rodpaintremodel@gmail.com
-                    <i class="far fa-envelope"></i>
-                </li>
-                <li class="Landing-Item animate__animated animate__fadeInDown animate__fast">404-422-5513 <i
-                        class="fas fa-phone-alt"></i></li>
-                <!-- <button class="Landing-Btn"><a class="#" href="#About">About
-                        Us</a></button> -->
-            </ul>
-        </div>
-        <img src="./svg/construction-red.svg" alt="#"
-            class="Landing-Img animate__animated animate__fadeInDown animate__fast">
-    </section>
-
-    <!-- A b o u t ______________ -->
-    <header>
-        <h1 class="About-Header" id="About-Header"> About Us</h1>
-    </header>
-
-    <section class="About" id="About">
-        <div class="About-Text">
-            <h1 class="About-Title"> Lorem Ipsum is a Vibe but with a Twist</h1>
-            <!-- <p class="About-Paragraph">We, in Rod Painting and Remodeling provide services such as: Paint ( interior &
-                exterior ),
-                Construction, Pressure wash ( Decks & Wooden Fences), Home Restorations, Fix Water Leaks,
-                Fence Installation & Making Them, Sheds, SheetRocks (Dry Walls).
-            </p> -->
-            <p class="About-Paragraph">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a.
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a.
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a.
-            </p>
-        </div>
-        <img src="./images/pexels-burst-544965.jpg" alt="#" class="About-Img">
-    </section>
-
-    <!-- S e r v i c e s ______________ -->
-    <header class="Services-Header" id="Services-Header">
-        <h1 class="Services-Title"> Services </h1>
-    </header>
-
-    <section class="Services" id="Services">
-        <div class="Card-Wrapper">
-            <h1 class="Card-Title">
-                title
-            </h1>
-
-            <p class="Card-Paragraph">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                Ipsum has been the industry's
-            </p>
-        </div>
-        <div class="Card-Wrapper">
-            <h1 class="Card-Title">
-                title
-            </h1>
-
-            <p class="Card-Paragraph">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                Ipsum has been the industry's
-            </p>
-        </div>
-        <div class="Card-Wrapper">
-            <h1 class="Card-Title">
-                title
-            </h1>
-
-            <p class="Card-Paragraph">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                Ipsum has been the industry's
-            </p>
         </div>
 
     </section>
+    <!-- ========================== About Me Section ==========================  -->
 
-
-    <!-- G a l l e r y ______________ -->
-    <header>
-        <h1 class="About-Header Gallery-Header" id="Gallery-Header"> Gallery </h1>
-    </header>
-
-    <section class="Gallery" id="Gallery">
-        <div class="Gallery-card" id="first-card">
-            <div class="Gallery-card-image">
-                <img src="../images/pexels-burst-544965.jpg" alt="built">
-            </div>
-            <div class="Gallery-card-content">
-                <div class="Gallery-card-title">
-                    Card Hover Animation
-                </div>
-                <!-- <div class="Gallery-card-sub-title">
-                    HTML CSS
-                </div> -->
-                <div class="Gallery-card-bottom">
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit
-                    </p>
-                    <button> Read more </button>
-                </div>
-            </div>
-        </div>
-        <!--  -->
-        <div class="Gallery-card">
-            <div class="Gallery-card-image">
-                <img src="../images/pexels-burst-544965.jpg" alt="built">
-            </div>
-            <div class="Gallery-card-content">
-                <div class="Gallery-card-title">
-                    Card Hover Animation
-                </div>
-                <!-- <div class="Gallery-card-sub-title">
-                    HTML CSS
-                </div> -->
-                <div class="Gallery-card-bottom">
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit
-                    </p>
-                    <button> Read more </button>
-                </div>
-            </div>
-        </div>
-        <!--  -->
-        <div class="Gallery-card">
-            <div class="Gallery-card-image">
-                <img src="../images/pexels-burst-544965.jpg" alt="built">
-            </div>
-            <div class="Gallery-card-content">
-                <div class="Gallery-card-title">
-                    Card Hover Animation
-                </div>
-                <!-- <div class="Gallery-card-sub-title">
-                    HTML CSS
-                </div> -->
-                <div class="Gallery-card-bottom">
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit
-                    </p>
-                    <button> Read more </button>
-                </div>
-            </div>
-        </div>
-        <!--  -->
-        <div class="Gallery-card">
-            <div class="Gallery-card-image">
-                <img src="../images/pexels-burst-544965.jpg" alt="built">
-            </div>
-            <div class="Gallery-card-content">
-                <div class="Gallery-card-title">
-                    Card Hover Animation
-                </div>
-                <!-- <div class="Gallery-card-sub-title">
-                    HTML CSS
-                </div> -->
-                <div class="Gallery-card-bottom">
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit
-                    </p>
-                    <button> Read more </button>
-                </div>
-            </div>
-        </div>
-        <!--  -->
-        <div class="Gallery-card">
-            <div class="Gallery-card-image">
-                <img src="../images/pexels-burst-544965.jpg" alt="built">
-            </div>
-            <div class="Gallery-card-content">
-                <div class="Gallery-card-title">
-                    Card Hover Animation
-                </div>
-                <!-- <div class="Gallery-card-sub-title">
-                    HTML CSS
-                </div> -->
-                <div class="Gallery-card-bottom">
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit
-                    </p>
-                    <button> Read more </button>
-                </div>
-            </div>
-        </div>
-        <!--  -->
-        <div class="Gallery-card">
-            <div class="Gallery-card-image">
-                <img src="../images/pexels-burst-544965.jpg" alt="built">
-            </div>
-            <div class="Gallery-card-content">
-                <div class="Gallery-card-title">
-                    Card Hover Animation
-                </div>
-                <!-- <div class="Gallery-card-sub-title">
-                    HTML CSS
-                </div> -->
-                <div class="Gallery-card-bottom">
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit
-                    </p>
-                    <button> Read more </button>
-                </div>
-            </div>
-        </div>
-        <!--  -->
-        <div class="Gallery-card">
-            <div class="Gallery-card-image">
-                <img src="../images/pexels-burst-544965.jpg" alt="built">
-            </div>
-            <div class="Gallery-card-content">
-                <div class="Gallery-card-title">
-                    Card Hover Animation
-                </div>
-                <!-- <div class="Gallery-card-sub-title">
-                    HTML CSS
-                </div> -->
-                <div class="Gallery-card-bottom">
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit
-                    </p>
-                    <button> Read more </button>
-                </div>
-            </div>
-        </div>
-        <!--  -->
-        <div class="Gallery-card">
-            <div class="Gallery-card-image">
-                <img src="../images/pexels-burst-544965.jpg" alt="built">
-            </div>
-            <div class="Gallery-card-content">
-                <div class="Gallery-card-title">
-                    Card Hover Animation
-                </div>
-                <!-- <div class="Gallery-card-sub-title">
-                    HTML CSS
-                </div> -->
-                <div class="Gallery-card-bottom">
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit
-                    </p>
-                    <button> Read more </button>
-                </div>
+    <section class="about">
+        <div class="about__container">
+            <img src="/assets/images/about-img.jpg" alt="guy drilling">
+            <div class="about__text-wrapper">
+                <h1>About Us</h1>
+                <p>Rod's Painting and Remodeling has been serving the local Metro Atlanta area for over a couple of years. We are commited & giving in providing quality work and results.</p>
             </div>
         </div>
     </section>
 
-    <script type="module" src="index.js"></script>
+    <!-- ========================== Servies Section ==========================  -->
 
+    <section>
+
+    </section>
+
+    <!-- ========================== Get in Touch Section ==========================  -->
+
+    <section>
+
+    </section>
+
+    <!-- ========================== Quote Section ==========================  -->
+
+    <section>
+
+    </section>
+
+    <!-- ========================== Footer ==========================  -->
+    <footer class="footer" id="footer">
+        <div class="footer__group-1 footer__group">
+            <img src="/assets/images/RodLogo.png" alt="rod-logo">
+            <p>
+                Copyright 2021 Rod Painting & Remodeling LLC
+            </p>
+        </div>
+        <div class="footer__group-2 footer__group">
+            <h1> CONTACT </h1>
+            <a href="#">
+                <p>404-942-232</p>
+            </a>
+            <a href="#">
+                <p>rodpaintremodel@gmail.com</p>
+            </a>
+        </div>
+
+        <div class="footer__group-3 footer__group">
+            <h1> NAVIGATION </h1>
+            <a href="#">
+                <p>Home</p>
+            </a>
+            <a href="#">
+                <p>About</p>
+            </a>
+            <a href="#">
+                <p>Quote</p>
+            </a>
+        </div>
+    </footer>
+
+
+    <script type="module" src="/assets/js/index.js"></script>
 </body>
 
 </html>

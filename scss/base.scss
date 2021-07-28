@@ -1,75 +1,71 @@
-/* Google Font API ______________________________ */
-@import url("https://fonts.googleapis.com/css2?family=Fauna+One&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/* ______________________________ Google Font API ______________________________ */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,800;1,900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-/* Typography ______________________________ */
+/* ============================== Font weight ============================== */
 
-//font-weights
-$font-weights: (
-  "low": 200,
-  "med-low": 300,
-  "regular": 400,
-  "medium": 550,
-  "bold": 700,
-);
+$fw-low: 300;
+$fw-semi-mid: 400;
+$fw-mid: 500;
+$fw-semi-bold: 600;
+$fw-bold: 900;
 
-//font-size
-$font-size: (
-  "xx-small": 14px,
-  "x-small": 16px,
-  "small": 20px,
-  "medium": 25px,
-  "regular": 35px,
-  "med-large": 45px,
-  "large": 55px,
-  "x-large": 65px,
-  "xx-large": 75px,
-);
+/* ============================== Font size ============================== */
 
-//fonts
+$fs-xxx-small: 14px;
+$fs-xx-small: 16px;
+$fs-x-small: 20px;
+$fs-small: 25px;
+$fs-medium: 30px;
+$fs-large: 35px;
+$fs-x-large: 45px;
+$fs-xx-large: 55px;
+$fs-xxx-large: 70px;
+
+/* ============================== Font family ============================== */
 
 $Fauna: "Fauna One", serif;
 $Playfair: "Playfair Display", serif;
 $Poppins: "Poppins", sans-serif;
+$Raleway: 'Raleway', sans-serif;
 
-//font-functions
-@function weight($weight-name) {
-  @return map-get($font-weights, $weight-name);
-}
+/* ============================== Colors ============================== */
 
-@function size($weight-name) {
-  @return map-get($font-size, $weight-name);
-}
+$black: #1f1f1f;
 
-// Color
-$primary-color: #fa5f6c;
-$second-color: #E11C2C;
-$white: rgb(245, 245, 245);
-$whiteBGCard:  #f8f8f8;
-$whiteBG:  #f1eded;
-$black: #1b1b1b;
-$blackBG: #2b2b2b;
+$white: hsl(300, 4%, 95%);
 
-// color to de-bug with
-$red: #e98585;
-$yellow: #e9da85;
-$green: #8ae985;
-$blue: #85b5e9;
+$red: hsl(0, 93%, 63%);
+$yellow: hsl(41, 95%, 70%);
+$green: hsl(117, 69%, 72%);
+$blue: hsl(211, 62%, 46%);
+$brown:hsl(20, 42%, 15%);
+/* ============================== Margins  ============================== */
+$m-1: 0.5rem;
+$m-2: 1rem;
+$m-3: 1.5rem;
+$m-4: 2rem;
+$m-5: 2.5rem;
+$m-5: 3rem;
 
-// Color for icons
-$insta: #bc2a8d;
-$linkeden: #0e76a8;
-$github:#fafafa;
-$html: #ce4040;
-$css: #419ec9;
-$js:#ecd134;
-$jquery:#539aca;
-$php:#9993f1;
-$react:#61dbfb;
-$scss: #d36cb2;
+/* ============================== Shadows  ============================== */
 
 $shadow: 15px 10px 5px -10px rgba(30, 30, 60, 0.4);
 $shadow2: 2px 5px 8px 3px rgba(30, 30, 60, 0.11);
-$shadow3: 15px 10px 5px -10px rgba(30, 30, 60, 0.4);
+$shadow3: 15px 10px 5px -10px rgba(30, 30, 60, 0.5);
+$shadowNav: 0 2px 4px rgba(0, 0, 0, 0.1);
+$shadow4: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+$shadow5:  rgba(0, 0, 0, 0.1) 0px 4px 12px;
+$shadow6: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+
+$shadowPressed: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+
+
+/* ============================== Z-index  ============================== */
+$z-normal: 1;
+$z-tooltip: 10;
+$z-fixed: 100;
+
+
 
 // 1500px
 /* ____________________________ Laptop / iPad Pro Screen Size */
