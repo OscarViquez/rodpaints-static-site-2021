@@ -186,29 +186,24 @@ body {
 /* HEADER CSS ************************************************************** */
 
 .landing {
-  background: hsl(0, 0%, 0%);
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
+    url("/assets/images/home-bg.jpg");
+  background-size: cover;
 
   color: $white;
-  width: 100%;
-  min-height: 90vh;
-  padding: 100px;
 
   &__wrapper {
-    position: absolute;
-    right: 0;
     width: 100%;
-    padding: 200px 100px;
+    padding: 300px 100px;
 
     text-align: center;
-    z-index: 1;
-
     h2 {
       font-size: $fs-large;
       font-weight: $fw-mid;
       text-decoration: underline;
     }
     h1 {
-      font-size: $fs-xx-large;
+      font-size: $fs-x-large;
       font-weight: $fw-semi-bold;
       margin: 30px 0;
     }
@@ -220,7 +215,7 @@ body {
   }
 
   .landing__buttons {
-    padding: 0 200px;
+    // padding: 0 200px;
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
@@ -240,100 +235,27 @@ body {
       }
     }
   }
-
-  video {
-    position: absolute;
-    opacity: 0.5;
-    top: 0;
-    left: 0;
-
-    width: 100%;
-    height: 90%;
-
-    object-fit: cover;
-  }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 768px) {
   .landing {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
+    url("/assets/images/phone-wp.jpg");
+  background-size: cover;
+
     &__wrapper {
-      padding: 150px 20px;
+    padding: 200px 0px;
+
     }
-  }
-}
-
-@media (max-width: 1000px) {
-  .landing {
-    &__wrapper {
-      padding: 150px 20px;
-
-      h1 {
-        font-size: $fs-x-large;
-      }
-
-      p {
-        font-size: $fs-xx-small;
-      }
-    }
-
     .landing__buttons {
-      padding: 0;
+      // padding: 0 200px;
       display: flex;
       flex-flow: column nowrap;
-      a {
-        padding: 10px 0;
-        p {
-          font-size: $fs-x-small;
-        }
-      }
+      justify-content: center;
     }
   }
 }
 
-@media (max-width: 600px) {
-  .landing {
-    padding: 0px;
-    min-height: 90vh;
-
-    &__wrapper {
-      padding: 150px 20px;
-
-      .landing__buttons {
-        a {
-          i {
-            display: none;
-          }
-          p {
-            font-size: $fs-xx-small;
-          }
-        }
-      }
-    }
-
-    video {
-      height: 90%;
-    }
-  }
-}
-
-@media (max-width: 340px) {
-  .landing {
-    padding: 0px;
-    min-height: 110vh;
-
-    &__wrapper {
-      padding: 60px 20px;
-
-      h1 {
-        font-size: $fs-large;
-      }
-    }
-
-    video {
-      height: 110%;
-    }
-  }
-}
 /* ABOUT ME CSS ************************************************************** */
 
 .about {
@@ -346,7 +268,6 @@ body {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
       url("/assets/images/about-img.jpg");
     background-size: cover;
-
   }
 
   &__text-container {
@@ -361,7 +282,6 @@ body {
       font-weight: $fw-semi-bold;
       font-size: $fs-x-large;
       text-decoration: underline;
-
     }
 
     p {
@@ -374,22 +294,20 @@ body {
 
 @media (max-width: 700px) {
   .about {
-  display: flex;
-  flex-flow: column nowrap;
+    display: flex;
+    flex-flow: column nowrap;
 
-  &__header-container {
-    width: 100%;
-    padding: 200px 0;
-  }
+    &__header-container {
+      width: 100%;
+      padding: 200px 0;
+    }
 
-  &__text-container {
-    width: 100%;
-    padding: 100px 30px 150px 50px;
+    &__text-container {
+      width: 100%;
+      padding: 100px 30px 150px 50px;
+    }
   }
 }
-}
-
-
 
 /* SERVICES CSS ************************************************************** */
 .services {
@@ -418,7 +336,6 @@ body {
       font-weight: $fw-semi-bold;
       font-size: $fs-x-large;
       text-decoration: underline;
-
     }
 
     ul {
@@ -437,7 +354,6 @@ body {
   .services {
     display: flex;
     flex-flow: column-reverse nowrap;
-
 
     &__header-container {
       width: 100%;
@@ -469,7 +385,6 @@ body {
       font-weight: $fw-semi-bold;
       padding-right: 10px;
       text-decoration: underline;
-
     }
 
     p {
@@ -592,7 +507,6 @@ footer {
       font-weight: $fw-bold;
       margin-bottom: 1rem;
       text-decoration: underline;
-
     }
     a {
       font-size: $fs-xxx-small;
@@ -612,7 +526,6 @@ footer {
       font-weight: $fw-bold;
       margin-bottom: 1rem;
       text-decoration: underline;
-
     }
     a {
       font-size: $fs-xxx-small;

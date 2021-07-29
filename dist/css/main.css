@@ -159,20 +159,16 @@ body {
 /* TEMPLATE LAYOUT CSS ************************************************************** */
 /* HEADER CSS ************************************************************** */
 .landing {
-  background: black;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.6))), url("/assets/images/home-bg.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url("/assets/images/home-bg.jpg");
+  background-size: cover;
   color: #f3f2f3;
-  width: 100%;
-  min-height: 90vh;
-  padding: 100px;
 }
 
 .landing__wrapper {
-  position: absolute;
-  right: 0;
   width: 100%;
-  padding: 200px 100px;
+  padding: 300px 100px;
   text-align: center;
-  z-index: 1;
 }
 
 .landing__wrapper h2 {
@@ -182,7 +178,7 @@ body {
 }
 
 .landing__wrapper h1 {
-  font-size: 55px;
+  font-size: 45px;
   font-weight: 600;
   margin: 30px 0;
 }
@@ -193,7 +189,6 @@ body {
 }
 
 .landing .landing__buttons {
-  padding: 0 200px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -219,35 +214,16 @@ body {
   color: inherit;
 }
 
-.landing video {
-  position: absolute;
-  opacity: 0.5;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 90%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-@media (max-width: 1200px) {
+@media (max-width: 768px) {
+  .landing {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.6))), url("/assets/images/phone-wp.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url("/assets/images/phone-wp.jpg");
+    background-size: cover;
+  }
   .landing__wrapper {
-    padding: 150px 20px;
-  }
-}
-
-@media (max-width: 1000px) {
-  .landing__wrapper {
-    padding: 150px 20px;
-  }
-  .landing__wrapper h1 {
-    font-size: 45px;
-  }
-  .landing__wrapper p {
-    font-size: 16px;
+    padding: 200px 0px;
   }
   .landing .landing__buttons {
-    padding: 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -255,47 +231,9 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-flow: column nowrap;
             flex-flow: column nowrap;
-  }
-  .landing .landing__buttons a {
-    padding: 10px 0;
-  }
-  .landing .landing__buttons a p {
-    font-size: 20px;
-  }
-}
-
-@media (max-width: 600px) {
-  .landing {
-    padding: 0px;
-    min-height: 90vh;
-  }
-  .landing__wrapper {
-    padding: 150px 20px;
-  }
-  .landing__wrapper .landing__buttons a i {
-    display: none;
-  }
-  .landing__wrapper .landing__buttons a p {
-    font-size: 16px;
-  }
-  .landing video {
-    height: 90%;
-  }
-}
-
-@media (max-width: 340px) {
-  .landing {
-    padding: 0px;
-    min-height: 110vh;
-  }
-  .landing__wrapper {
-    padding: 60px 20px;
-  }
-  .landing__wrapper h1 {
-    font-size: 35px;
-  }
-  .landing video {
-    height: 110%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
