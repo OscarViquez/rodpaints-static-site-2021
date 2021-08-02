@@ -135,6 +135,9 @@ a {
 }
 
 /* GLOBAL CSS ************************************************************** */
+* {
+  box-sizing: border-box;
+}
 
 body {
   font-family: $Poppins;
@@ -142,116 +145,125 @@ body {
 
 /* TEMPLATE LAYOUT CSS ************************************************************** */
 
-// .section {
-//   padding: 4rem 0 4rem 0;
+.section {
+  padding: 4rem 0 4rem 0;
 
-//   &__wrapper {
-//     width: 1300px;
+  &__wrapper {
+    width: 1300px;
 
-//     display: block;
-//     margin-left: auto;
-//     margin-right: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 
-//     text-align: left;
-//     justify-content: left;
-//   }
-// }
+    text-align: left;
+    justify-content: left;
+  }
+}
 
-// @media (max-width: 1350px) {
-//   .section {
-//     &__wrapper {
-//       width: 900px;
-//     }
-//   }
-// }
+@media (max-width: 1350px) {
+  .section {
+    &__wrapper {
+      width: 900px;
+    }
+  }
+}
 
-// @media (max-width: 900px) {
-//   .section {
-//     padding: 12rem 0 4rem 0;
+@media (max-width: 900px) {
+  .section {
+    padding: 12rem 0 4rem 0;
 
-//     &__wrapper {
-//       width: 600px;
-//     }
-//   }
-// }
+    &__wrapper {
+      width: 600px;
+    }
+  }
+}
 
-// @media (max-width: 600px) {
-//   .section {
-//     &__wrapper {
-//       width: 320px;
-//     }
-//   }
-// }
+@media (max-width: 600px) {
+  .section {
+    &__wrapper {
+      width: 320px;
+    }
+  }
+}
 
 /* HEADER CSS ************************************************************** */
 
 .landing {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
-    url("/assets/images/home-bg.jpg");
+  color: $white;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("/assets/images/landing-bg.jpg");
   background-size: cover;
 
-  color: $white;
+  padding: 20rem 0 10rem;
 
   &__wrapper {
-    width: 100%;
-    padding: 300px 100px;
+    .landing__container {
+      display: flex;
+      flex-flow: row nowrap;
+    }
 
-    text-align: center;
-    h2 {
-      font-size: $fs-large;
-      font-weight: $fw-mid;
+    .landing__wrapper-text {
+      margin: 0 3rem 0 6rem;
+      line-height: 1.3;
+    }
+
+    #landing__img {
+      width: 30%;
+      border-radius: 50px;
+    }
+
+    &-comp-name {
+      font-size: $fs-medium;
+      font-weight: $fw-low;
       text-decoration: underline;
     }
-    h1 {
+    &-hook {
       font-size: $fs-x-large;
-      font-weight: $fw-semi-bold;
+      font-weight: 700;
       margin: 30px 0;
     }
 
-    p {
+    &-description {
       font-size: $fs-x-small;
       font-weight: $fw-low;
     }
-  }
-
-  .landing__buttons {
-    // padding: 0 200px;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
 
     a {
-      margin: 30px 20px 5px 20px;
-      padding: 15px 0;
-
+      margin: 30px 20px;
       color: $white;
-
       text-decoration: none;
 
       p {
         font-size: $fs-x-small;
         font-weight: $fw-semi-bold;
         color: inherit;
+
+        i {
+          margin-right: 5px;
+        }
       }
     }
   }
 }
 
-@media (max-width: 768px) {
+/* ================================ @media (max-width: 1068px)================================= */
+
+@media (max-width: 1350px) {
   .landing {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
-    url("/assets/images/phone-wp.jpg");
-  background-size: cover;
+    padding: 15rem 0 5rem;
 
     &__wrapper {
-    padding: 200px 0px;
-
-    }
-    .landing__buttons {
-      // padding: 0 200px;
-      display: flex;
-      flex-flow: column nowrap;
-      justify-content: center;
+      #landing__img {
+        display: none;
+      }
+      .landing__container {
+        display: flex;
+        flex-flow: column nowrap;
+      }
+      .landing__wrapper-text {
+        margin: 0;
+        line-height: 1.3;
+      }
     }
   }
 }
@@ -259,217 +271,175 @@ body {
 /* ABOUT ME CSS ************************************************************** */
 
 .about {
-  display: flex;
+  letter-spacing: 1px;
+  line-height: 1.6;
 
-  &__header-container {
-    width: 50%;
-    padding: 250px 0;
+  background: $white;
 
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
-      url("/assets/images/about-img.jpg");
-    background-size: cover;
-  }
+  color: $black;
 
-  &__text-container {
-    width: 50%;
-    padding: 150px 0px 150px 100px;
-    background-color: $white;
-    color: $black;
-    line-height: 1.8;
+  padding: 6rem 0;
+  &__wrapper {
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
 
-    h1 {
-      color: $black;
+    .about__title {
+      font-size: $fs-large;
       font-weight: $fw-semi-bold;
-      font-size: $fs-x-large;
       text-decoration: underline;
     }
 
-    p {
-      letter-spacing: 2px;
-      font-size: $fs-xxx-small;
-      font-weight: $fw-mid;
+    .about__description {
+      font-size: $fs-xx-small;
     }
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 768px) {
   .about {
-    display: flex;
-    flex-flow: column nowrap;
+    padding: 6rem 0;
 
-    &__header-container {
-      width: 100%;
-      padding: 200px 0;
-    }
-
-    &__text-container {
-      width: 100%;
-      padding: 100px 30px 150px 50px;
+    &__wrapper {
+      width: 90%;
+      margin: 0 auto;
+      text-align: center;
     }
   }
 }
 
 /* SERVICES CSS ************************************************************** */
 .services {
-  display: flex;
+  letter-spacing: 1px;
+  line-height: 1.6;
 
-  &__header-container {
-    width: 50%;
-    padding: 200px 0;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("/assets/images/atlanta-bg.jpg");
+  background-size: cover;
 
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
-      url("/assets/images/services-img.jpg");
-    background-size: cover;
+  padding: 6rem 0;
 
-    text-align: center;
-  }
-
-  &__list-container {
-    width: 50%;
-    padding: 100px 10px 150px 100px;
-    background-color: $white;
-    color: $black;
-    line-height: 1.8;
-
-    h1 {
-      color: $black;
-      font-weight: $fw-semi-bold;
+  &__wrapper {
+    .services__title {
+      font-weight: $fw-mid;
       font-size: $fs-x-large;
+
+      text-align: center;
       text-decoration: underline;
+
+      margin-bottom: 2rem;
+      color: $white;
     }
 
-    ul {
-      list-style: circle;
+    .services-list__wrapper {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
 
-      li {
-        letter-spacing: 2px;
-        font-size: $fs-xxx-small;
-        font-weight: $fw-mid;
+      .services-list__item {
+        background-color: $white;
+        border-radius: 5px;
+        text-align: center;
+
+        width: 45%;
+        padding: 2rem;
+        margin: 15px 10px;
+
+        p {
+          font-size: $fs-xx-small;
+          text-transform: uppercase;
+          font-weight: $fw-mid;
+        }
       }
     }
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 900px) {
   .services {
-    display: flex;
-    flex-flow: column-reverse nowrap;
+    &__wrapper {
+      .services-list__wrapper {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
 
-    &__header-container {
-      width: 100%;
-      padding: 200px 0;
-    }
+        .services-list__item {
+          width: 100%;
+          padding: 1rem;
+          margin: 15px 0px;
 
-    &__list-container {
-      width: 100%;
-      padding: 100px 10px 150px 50px;
+          p {
+            font-size: $fs-xx-small;
+            text-transform: uppercase;
+            font-weight: $fw-mid;
+          }
+        }
+      }
     }
   }
 }
 
 /* Quote CSS ************************************************************** */
 .quote {
-  padding: 100px;
-  line-height: 1.5;
+  padding: 5rem 0;
 
-  .quote__container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .quote__contact {
-    width: 50%;
+  .quote__wrapper {
+    text-align: center;
 
-    h1 {
-      font-size: $fs-x-large;
-      font-weight: $fw-semi-bold;
-      padding-right: 10px;
+    .quote__title {
+      font-size: $fs-large;
+      margin-bottom: 1rem;
       text-decoration: underline;
+      line-height: 1.3;
+
     }
-
-    p {
+    .quote__paragraph {
+      font-size: $fs-x-small;
+      line-height: 1.3;
       letter-spacing: 1px;
-      font-size: $fs-xxx-small;
-
-      padding-bottom: 10px;
-      padding-right: 20px;
+      margin-bottom: 1rem;
     }
 
     a {
-      color: $black;
       p {
-        letter-spacing: 1px;
         font-weight: $fw-semi-bold;
+        font-size: $fs-x-small;
+        margin-bottom: 1rem;
       }
     }
   }
-
-  .quote__image {
-    width: 50%;
-    img {
-      width: 100%;
-      height: auto;
-    }
-  }
 }
-
-@media (max-width: 1110px) {
+@media (max-width: 600px) {
   .quote {
-    padding: 100px 50px;
+    padding: 5rem 0;
+    .quote__wrapper {
 
-    .quote__container {
-      display: flex;
-      flex-flow: row nowrap;
-      justify-content: center;
-    }
-
-    .quote__contact {
-      width: 50%;
-      h1 {
+      .quote__title {
         font-size: $fs-medium;
-        padding-right: 10px;
       }
 
-      p {
-        letter-spacing: 1px;
-        padding-bottom: 10px;
-        padding-right: 20px;
-      }
-
-      a {
-        color: $black;
-        p {
-          letter-spacing: 1px;
-          font-weight: $fw-semi-bold;
-        }
+      .quote__paragraph {
+        font-size: $fs-xx-small;
       }
     }
-
-    .quote__image {
-      width: 50%;
-      img {
-        width: 100%;
-        height: auto;
-      }
+    i {
+      display: none;
     }
   }
 }
-
-@media (max-width: 730px) {
+@media (max-width: 341px) {
   .quote {
-    .quote__container {
-      display: flex;
-      flex-flow: column nowrap;
-      justify-content: center;
-    }
-    .quote__contact {
-      width: 100%;
-    }
-    .quote__image {
-      width: 100%;
-      img {
-        width: 100%;
-        height: auto;
+    .quote__wrapper {
+      a {
+        p {
+          font-weight: $fw-semi-bold;
+          font-size: $fs-xx-small;
+          margin-bottom: 1rem;
+
+          i {
+            display: none;
+          }
+        }
       }
     }
   }
@@ -478,8 +448,8 @@ body {
 /* FOOTER CSS ************************************************************** */
 footer {
   padding: 70px 200px;
-  background-color: $white;
-  color: $black;
+  background-color: $black;
+  color: $white;
 
   display: flex;
   flex-flow: row wrap;
@@ -510,7 +480,7 @@ footer {
     }
     a {
       font-size: $fs-xxx-small;
-      color: $black;
+      color: $white;
 
       p {
         margin-bottom: 1rem;
@@ -529,7 +499,7 @@ footer {
     }
     a {
       font-size: $fs-xxx-small;
-      color: $black;
+      color: $white;
 
       p {
         margin-bottom: 1rem;
@@ -546,7 +516,7 @@ footer {
 
 @media (max-width: 768px) {
   footer {
-    padding: 40px 20px;
+    padding: 40px;
 
     display: flex;
     flex-flow: column wrap;
