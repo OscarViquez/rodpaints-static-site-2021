@@ -19,10 +19,17 @@ let timelineServices = gsap.timeline({
 
 });
 
+let timelineQuote = gsap.timeline({
+    scrollTrigger: {
+        trigger: '.quote__paragraph',
+    },
+
+});
+
+
 timelineHome
-    .from(".landing__wrapper-comp-name", { y: -50, opacity: 0, duration: .5 }, "-1")
-    .from(".landing__wrapper-hook", { x: 20, opacity: 0, duration: .5 }, )
-    .from(".landing__wrapper-description", { x: 20, opacity: 0, duration: .5 }, )
+    .from(".landing__wrapper-hook", { x: 20, opacity: 0, duration: .5 },)
+    .from(".landing__wrapper-description", { x: 20, opacity: 0, duration: .5 },)
     .from('.landing__buttons', { y: 20, opacity: 0, duration: .5 })
 
 
@@ -32,4 +39,10 @@ timelineAbout
 
 timelineServices
     .from(".services-h1-animation", { y: -100, opacity: 0, duration: .7 }, "-1")
-    .from('.services-list-animation', { y: 50, opacity: 0, duration: .5 })
+    .from('.services-list__item', { y: 50, opacity: 0, duration: .5 })
+
+
+timelineQuote
+    .from(".quote__title", { y: -100, opacity: 0, duration: .7 }, "-1")
+    .from('.quote__paragraph', { y: 50, opacity: 0, duration: .5 })
+

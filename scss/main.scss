@@ -448,8 +448,8 @@ body {
 /* FOOTER CSS ************************************************************** */
 footer {
   padding: 70px 200px;
-  background-color: $black;
-  color: $white;
+  background-color: $white;
+  color: $black;
 
   display: flex;
   flex-flow: row wrap;
@@ -480,7 +480,8 @@ footer {
     }
     a {
       font-size: $fs-xxx-small;
-      color: $white;
+      color: $black;
+
 
       p {
         margin-bottom: 1rem;
@@ -499,7 +500,8 @@ footer {
     }
     a {
       font-size: $fs-xxx-small;
-      color: $white;
+      color: $black;
+
 
       p {
         margin-bottom: 1rem;

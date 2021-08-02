@@ -449,8 +449,8 @@ body {
 /* FOOTER CSS ************************************************************** */
 footer {
   padding: 70px 200px;
-  background-color: #080808;
-  color: #f3f2f3;
+  background-color: #f3f2f3;
+  color: #080808;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -489,7 +489,7 @@ footer .footer__group-2 h1 {
 
 footer .footer__group-2 a {
   font-size: 14px;
-  color: #f3f2f3;
+  color: #080808;
 }
 
 footer .footer__group-2 a p {
@@ -509,7 +509,7 @@ footer .footer__group-3 h1 {
 
 footer .footer__group-3 a {
   font-size: 14px;
-  color: #f3f2f3;
+  color: #080808;
 }
 
 footer .footer__group-3 a p {
